@@ -3,20 +3,10 @@ import subprocess
 import numpy as np
 from scipy.spatial.transform import Rotation as R
 
-mypath = "/Users/wangyuesong/Downloads/实验数据/轨迹标定一"
+mypath = "" # add your data path
 
 
 def se3(x, y, z, a, b, c, d):
-    # R = np.array([[1-2*(b**2+c**2), 2*(a*b-c*d), 2*(a*c+b*d)],
-    #               [2*(a*b+c*d), 1-2*(a**2+c**2), 2*(b*c-a*d)],
-    #               [2*(a*c-b*d), 2*(b*c+a*d), 1-2*(a**2+b**2)]])
-    # t = np.array([[x],
-    #               [y],
-    #               [z]])
-    # T = np.block([[R, t],
-    #               [0, 0, 0, 1]])
-    # return T
-    # 将四元数转换为旋转矩阵
     r = R.from_quat([a, b, c, d])
     R_mat = r.as_matrix()
 
