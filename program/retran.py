@@ -5,7 +5,6 @@ from scipy.spatial.transform import Rotation as R
 
 mypath = "" # add your data path
 
-
 def se3(x, y, z, a, b, c, d):
     r = R.from_quat([a, b, c, d])
     R_mat = r.as_matrix()
@@ -17,14 +16,12 @@ def se3(x, y, z, a, b, c, d):
 
     return T
 
-
 def se3toPos(T):
     t = T[:3, 3]
     R_mat = T[:3, :3]
     r = R.from_matrix(R_mat)
     quat = r.as_quat()
     return t, quat
-
 
 def translate(item, transform, scale):
     list = item.split()
@@ -59,7 +56,6 @@ def run_evo_ape(path):
     if result.returncode != 0:
         print(result.stderr.decode('utf-8'))
     return result.stdout.decode('utf-8')
-
 
 if __name__ == '__main__':
     RMSEfile = open(mypath + "rmse.txt", "w")
