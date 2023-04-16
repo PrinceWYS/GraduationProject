@@ -1,0 +1,21 @@
+Rotation of alignment:
+[[-0.11380497  0.30651385  0.94503846]
+ [-0.54631217  0.77518926 -0.31721385]
+ [-0.8298141  -0.55238652  0.07923186]]
+Translation of alignment:
+[-2.13894309  1.19346003  0.44704054]
+Scale correction: 0.984154805106699
+--------------------------------------------------------------------------------
+Compared 3530 absolute pose pairs.
+Calculating APE for translation part pose relation...
+--------------------------------------------------------------------------------
+APE w.r.t. translation part (m)
+(with Sim(3) Umeyama alignment)
+
+       max	1.184143
+      mean	0.525738
+    median	0.526949
+       min	0.000023
+      rmse	0.607662
+       sse	1303.464809
+       std	0.304719
