@@ -363,16 +363,15 @@ class Location:
 
     class Config:
         def __init__(self):
-            self.appKey = '29da1c7918fb4f698789cf846cbef615'
-            self.appSecret = '6c8a1815714341cc9440'
-            self.Location_Base_URL = 'https://mr-stage.sensetime.com/api/app/positioning/scheduler/v1/regions/gAj84noD?'\
-                                     'algoVersion=v4&buildingCode=Xr3GMF8Y&blockCode=wtb2IUh3&floorNum=4&tenantId=a93afefb-62e7-4c5a-90ab-f3768a23434a'
-            self.TenantId = 'a93afefb-62e7-4c5a-90ab-f3768a23434a'
-            self.RegionCode = 'gAj84noD'
-            self.BuildingCode = 'Xr3GMF8Y'
-            self.BlockCode = 'wtb2IUh3'
-            self.PoiURL = 'https://mr-stage.sensetime.com/api/poi-discovery/v1/sites'
-            self.AlgoVersion = 'v4'
+            self.appKey = ''
+            self.appSecret = ''
+            self.Location_Base_URL = ''
+            self.TenantId = ''
+            self.RegionCode = ''
+            self.BuildingCode = ''
+            self.BlockCode = ''
+            self.PoiURL = ''
+            self.AlgoVersion = ''
 
 class Camera:
     def __init__(self):
@@ -424,7 +423,7 @@ class Camera:
         return timeList
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = '123.60.23.1' # your sever's IP address
+host = '' # your sever's IP address
 port = 8848 # 8848 by default or your server's port
 print("start connect")
 # 连接服务，指定主机和端口
