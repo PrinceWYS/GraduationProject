@@ -6,11 +6,16 @@
 ## 文件说明
 `program`: 实验过程中使用的辅助程序
 
-`data`: 实验过程中的一些数据
+`location`: 移动相机定位程序
+
+`Server`: 服务器程序
+
+`MMW4F_Oculus`: Unity开发场景
 ## 开发环境
 |||
 |---|---|
-|PC|iMac|
+|PC|MacOS|
 |Unity|2021.3|
 |VR设备|Oculus Quest2|
-|移动相机设备|iOS16
+|移动相机设备|RealSense D435i|
+|开发板|JetsonNano|
