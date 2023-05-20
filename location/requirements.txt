@@ -1,0 +1,5 @@
+numpy==1.13.3
+Pillow==9.5.0
+pyrealsense2==2.53.1.4623
+requests==2.18.4
+scipy==0.19.1
